@@ -2,7 +2,11 @@ header{
     background-color: $color1;
     border-bottom: ridge;
     border-color: rgb(186, 142, 186);
-
+    
+    span{
+        font-size: x-large;
+    }
+    
     div{
         display: flex;
         justify-content: end;
@@ -10,9 +14,10 @@ header{
         li{
             padding-right: 1rem;
             padding-left: 1rem;
-            font-family: 'Oswald', sans-serif;
+            
                 
                 a{
+                    font-family: 'Oswald', sans-serif;
                     color: white;
                     text-decoration: none;
                             &:hover{

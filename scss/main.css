@@ -47,10 +47,10 @@ header div {
 header div li {
   padding-right: 1rem;
   padding-left: 1rem;
-  font-family: 'Oswald', sans-serif;
 }
 
 header div li a {
+  font-family: 'Oswald', sans-serif;
   color: white;
   text-decoration: none;
 }
