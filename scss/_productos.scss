@@ -1,0 +1,16 @@
+
+// PAGINA PRODUCTOS //
+
+.titulosProductos{
+    color: rgb(206, 180, 213);
+}
+
+@media (max-width: 426px) { 
+    .imgProductos{
+        width: 35%;
+    }
+
+    .grilla{
+        flex-wrap: nowrap;
+    }
+}

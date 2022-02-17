@@ -1,0 +1,25 @@
+header{
+    background-color: $color1;
+    border-bottom: ridge;
+    border-color: rgb(186, 142, 186);
+
+    div{
+        display: flex;
+        justify-content: end;
+            
+        li{
+            padding-right: 1rem;
+            padding-left: 1rem;
+            font-family: 'Oswald', sans-serif;
+                
+                a{
+                    color: white;
+                    text-decoration: none;
+                            &:hover{
+                            color:$color2;
+                            }
+                    }
+            }
+        
+    }
+}

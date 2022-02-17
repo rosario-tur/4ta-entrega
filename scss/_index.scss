@@ -1,0 +1,57 @@
+
+// MAIN //
+
+main{
+    height: 75vh;
+}
+
+.img1{
+    position: absolute;
+    
+}
+
+.img2{
+    position: relative;
+    top:100px;
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+// SECTION INDEX //
+
+.sectionIndex{
+    background-color: rgb(48, 44, 44);
+}
+
+.botonIndex{
+    @include boton;
+}
+
+@media (max-width: 426px) { 
+    .img2{
+        max-width: 300px;
+        top: 50px;
+        left: 50px;
+    }
+
+    .imagenHello{
+        max-width: 200px;
+    }
+
+    .botonIndex{
+        font-size: x-small;
+        width: 40%;
+        height: 50%;
+    }
+
+}

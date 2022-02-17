@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//VARIABLES//
+
+$color1: rgb(206, 180, 213);
+$color2: rgb(113, 28, 113);
+
+//MIXIN//
+
+@mixin boton {
+    color: rgb(67, 65, 65);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: rgb(123, 227, 202);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    border: rgb(99, 146, 233) solid 4px;
+    border-radius: calc(20px);
+        boton:hover{
+            background-color: rgb(242, 247, 152);
+            border: rgb(168, 222, 145) solid 4px;
+        }
+}
+
+
+// FOR //
+
+@for $p from 1 through 6 {
+    h#{$p} {
+        padding: $p * 0.5rem;
+    }
+}
+
+//IMPORTACIONES//
+@import "./header";
+@import "./index";
+@import "./productos";
+@import "./planDetox";
+@import "./productos";
+@import "./franquicias";
+@import "./footer";

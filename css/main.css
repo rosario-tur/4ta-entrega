@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  background-color: #ceb4d5;
+  border-bottom: ridge;
+  border-color: #ba8eba;
+}
+
+header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+header div ul li a {
+  color: #711c71;
+  text-decoration: none;
+}
+
+header div ul li a:hover {
+  color: white;
+}
+
+.img1 {
+  position: absolute;
+}
+
+.img2 {
+  position: relative;
+  top: 100px;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.sectionIndex {
+  background-color: #302c2c;
+}
+
+.botonIndex {
+  color: #434141;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  background-color: #7be3ca;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  border: #6392e9 solid 4px;
+  border-radius: calc(20px);
+}
+
+.botonIndex:hover {
+  background-color: #f2f798;
+  border: #a8de91 solid 4px;
+}
+
+@media (max-width: 426px) {
+  .img2 {
+    max-width: 300px;
+    top: 50px;
+    left: 50px;
+  }
+  .imagenHello {
+    max-width: 200px;
+  }
+  .botonIndex {
+    font-size: x-small;
+    width: 40%;
+    height: 50%;
+  }
+}
+
+.titulosProductos {
+  color: #ceb4d5;
+}
+
+@media (max-width: 426px) {
+  .imgProductos {
+    width: 35%;
+  }
+  .grilla {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.tituloPlanes {
+  color: #ceb4d5;
+}
+
+.colorPlanes {
+  color: #67726e;
+}
+
+.titulosProductos {
+  color: #ceb4d5;
+}
+
+@media (max-width: 426px) {
+  .imgProductos {
+    width: 35%;
+  }
+  .grilla {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.fondoFranquicia {
+  background-color: #302c2c;
+}
+
+.boton {
+  background-color: #ceb4d5;
+  margin: 10px 0px 10px 0px;
+}
+
+.boton:hover {
+  background-color: #70d9f9;
+}
+
+.tituloFranquicia {
+  color: #77d33e;
+}
+
+footer {
+  background-color: #ceb4d5;
+}
+/*# sourceMappingURL=main.css.map */
