@@ -1,9 +1,6 @@
 
 // MAIN //
 
-main{
-    height: 75vh;
-}
 
 .img1{
     position: absolute;
@@ -35,6 +32,10 @@ main{
 
 .botonIndex{
     @include boton;
+}
+
+.botonIndex:hover{
+    @include boton2;
 }
 
 @media (max-width: 426px) { 

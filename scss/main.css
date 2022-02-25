@@ -17,22 +17,14 @@ h3 {
   padding: 1.5rem;
 }
 
-h4 {
-  padding: 2rem;
-}
-
-h5 {
-  padding: 2.5rem;
-}
-
-h6 {
-  padding: 3rem;
-}
-
 header {
   background-color: #ceb4d5;
   border-bottom: ridge;
   border-color: #ba8eba;
+}
+
+header span {
+  font-size: x-large;
 }
 
 header div {
@@ -52,15 +44,12 @@ header div li {
 header div li a {
   font-family: 'Oswald', sans-serif;
   color: white;
+  font-size: large;
   text-decoration: none;
 }
 
 header div li a:hover {
   color: #711c71;
-}
-
-main {
-  height: 75vh;
 }
 
 .img1 {
@@ -100,7 +89,7 @@ main {
 
 .botonIndex {
   color: #434141;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
   font-weight: bolder;
   background-color: #7be3ca;
@@ -111,9 +100,17 @@ main {
   border-radius: calc(20px);
 }
 
-.botonIndex boton:hover {
+.botonIndex:hover {
+  color: #434141;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
   background-color: #f2f798;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
   border: #a8de91 solid 4px;
+  border-radius: calc(20px);
 }
 
 @media (max-width: 426px) {
@@ -133,7 +130,8 @@ main {
 }
 
 .titulosProductos {
-  color: #ceb4d5;
+  font-family: 'Permanent Marker', cursive;
+  color: #711c71;
 }
 
 @media (max-width: 426px) {
@@ -150,12 +148,22 @@ main {
   color: #ceb4d5;
 }
 
-.colorPlanes {
-  color: #67726e;
+.card-title {
+  color: #711c71;
+}
+
+.accordion-button {
+  color: #711c71;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #711c71;
+  background-color: transparent;
 }
 
 .titulosProductos {
-  color: #ceb4d5;
+  font-family: 'Permanent Marker', cursive;
+  color: #711c71;
 }
 
 @media (max-width: 426px) {
@@ -168,32 +176,74 @@ main {
   }
 }
 
+.nosotrosSection h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.nosotrosSection h3 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.nosotrosSection p {
+  font-family: 'Oswald', sans-serif;
+}
+
+.nosotrosSection img {
+  width: 80px;
+  height: 80px;
+}
+
+.imgCarousel {
+  height: 90vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.franquiciaSection h2 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.franquiciaSection p {
+  font-family: 'Oswald', sans-serif;
+}
+
+.franquiciaSection h3 {
+  font-family: 'Oswald', sans-serif;
+  color: #77d33e;
+}
+
 .fondoFranquicia {
   background-color: #302c2c;
 }
 
-.boton {
+.botonFormulario {
   background-color: #ceb4d5;
   margin: 10px 0px 10px 0px;
 }
 
-.boton:hover {
-  background-color: #70d9f9;
-}
-
-.tituloFranquicia {
-  color: #77d33e;
+.botonFormulario:hover {
+  background-color: #8dd8af;
 }
 
 footer {
   background-color: #ceb4d5;
 }
 
-footer li {
+footer a {
+  color: #711c71;
   text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: large;
 }
 
-footer li a {
+footer a:hover {
+  color: white;
+}
+
+footer p {
   color: #711c71;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: large;
 }
 /*# sourceMappingURL=main.css.map */

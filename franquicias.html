@@ -23,7 +23,7 @@
         <!-- libreria -->
         <script src="https://kit.fontawesome.com/e21bbbde11.js" crossorigin="anonymous"></script>
         <title>tienda</title>
-        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./scss/main.css">
     </head>
 
 <body>
@@ -40,42 +40,46 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-link nav-item">
-                        <a href="index.html">Inicio</a>
+                        <a class="fw-bolder" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-link nav-item">
-                        <a href="productos.html">Productos</a>
+                        <a class="fw-bolder" href="productos.html">Productos</a>
                     </li>
                     <li class="nav-link nav-item">
-                        <a href="planDetox.html">Planes detox</a>
+                        <a class="fw-bolder" href="planDetox.html">Planes detox</a>
                     </li>
                     <li class="nav-link nav-item">
-                        <a href="nosotros.html">Nosotros</a>
+                        <a class="fw-bolder" href="nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-link nav-item">
-                        <a href="franquicias.html">Franquicias</a>
+                        <a class="fw-bolder" href="franquicias.html">Franquicias</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <section class="fondoFranquicia text-center">
-        <h2 class="text-white fst-italic p-2">¿Por qué elegirnos?</h2>
-        <div data-aos="zoom-in">
-            <img class="img-fluid p-2" src="./assets/franquicia.jpeg" alt="imagen franquicia">
+    <section class="fondoFranquicia franquiciaSection">
+        <h2 class="text-white text-center">¿Por qué elegirnos?</h2>
+        <div class="container">
+            <div class="row d-flex pb-5">
+                <img class="col w-50 p-2" data-aos="zoom-in" src="./assets/nosotroscarrousel.jpg" alt="imagen franquicia">
+                <p class="col text-white p-5 lead"><b>Don Juice es una franquicia de restauración saludable, especializada en la elaboración de comidas y zumos 100% naturales de máxima calidad.</b><br>
+                    <b>Ventajas:</b><br>
+                    · Franquicia muy rentable dentro del sector hostelero.<br>
+                    · Ofrece distintas opciones de local a los franquiciados.<br>
+                    · Negocio en auge por su implicación con la alimentación saludable.
+                    </p>
+            </div>
         </div>
-        <p class="text-white text-center p-5 lh-bas">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-            magni nobis
-            suscipit laudantium eos
-            consequatur ea eligendi facere eius aliquid optio, quae velit, veritatis nihil molestias repellat rerum
-            maxime dolor! Id enim soluta ipsam tenetur consequatur? Labore fuga nostrum iusto exercitationem voluptatem
-            aliquid cumque laborum a? Similique nemo necessitatibus facere!</p>
-        <h2 class="text-center fst-italic tituloFranquicia ">Selecion de candidatos</h2>
-        <img class="img-fluid" src="./assets/Dosier_imagen-1024x576.png" alt="imagen sobre candidatos">
+        <div class="text-center">
+            <h3 class="fst-italic">Selección de candidatos</h3>
+            <img class="img-fluid" src="./assets/Dosier_imagen-1024x576.png" alt="imagen sobre candidatos">
+        </div>
     </section>
     <section class="fondoFranquicia pb-5">
         <form class="container border border4-primary w-50">
             <div class="row">
-                <h3 class="text-white pt-2">Contactanos</h3>
+                <h3 class="text-white pt-2">Contactanos!</h3>
             </div>
             <div class="form-row d-flex justify-content-between">
                 <div class="form-group col-md-6">
@@ -102,19 +106,25 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
                     placeholder="Deje su mensaje"></textarea>
             </div>
-            <button type="submit" class="btn boton">Enviar</button>
+            <button type="submit" class="btn botonFormulario">Enviar</button>
         </form>
     </section>
     <footer class="w-100">
-        <div class="row p-5 d-flex aling-items justify-content-around flex-wrap">
+        <div class="row p-4 d-flex aling-items justify-content-around flex-wrap">
             <div class="col">
                 <ul class="list-unstyled">
-                    <li><a class="colorLinks" href="">Trabaja con nosotros</a></li>
-                    <li><a class="colorLinks" href="">Hazte socio</a></li>
-                    <li><a class="colorLinks" href="">Politica de privacidad</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                    <li><a href="#">Hazte socio</a></li>
+                    <li><a href="#">Politica de privacidad</a></li>
                 </ul>
             </div>
             <div class="col">
+                <p>Nos encuentras en</p>
+                <a class="me-5" href="#"><img src="./assets/ubereat.png" alt="imagen Uber Eats"></a>
+                <a class="me-5" href="#"><img src="./assets/glovo.jpeg" alt="imagen Glovo"></a>
+            </div>
+            <div class="col">
+                <p>Siguenos</p>
                 <a href=""><i class="bi bi-facebook pe-3" style="font-size:30px;"></i></a>
                 <a href=""><i class="bi bi-twitter pe-3" style="font-size:30px;"></i></a>
                 <a href=""><i class="bi bi-instagram pe-3" style="font-size:30px;"></i></a>

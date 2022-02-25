@@ -1,8 +1,10 @@
 
 // PAGINA PRODUCTOS //
 
+
 .titulosProductos{
-    color: rgb(206, 180, 213);
+    font-family: 'Permanent Marker', cursive;
+    color: $color2;
 }
 
 @media (max-width: 426px) { 

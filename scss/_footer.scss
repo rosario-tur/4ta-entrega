@@ -1,9 +1,19 @@
 footer{
     background-color: $color1;
-    li{
-        text-decoration: none;
-        a{
-            color: $color2;
-        }
-    }
+            a{
+                color: $color2;
+                text-decoration: none;
+                font-family: 'Oswald', sans-serif;
+                font-size: large;
+            }
+            a:hover{
+                color: white;
+            }
+            p{
+                color: $color2;
+                text-decoration: none;
+                font-family: 'Oswald', sans-serif;
+                font-size: large;
+            }
+
 }

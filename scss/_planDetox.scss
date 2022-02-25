@@ -1,9 +1,21 @@
 // PLAN DETOX //
 
 .tituloPlanes{
-    color: rgb(206, 180, 213);
+    color: $color1;
 }
 
-.colorPlanes{
-    color: rgb(103, 114, 110);
+.card-title{
+    color: $color2;
+}
+
+
+.accordion-button{
+    color: $color2;
+    
+}
+
+
+.accordion-button:not(.collapsed){
+    color: $color2;
+    background-color: transparent;
 }
