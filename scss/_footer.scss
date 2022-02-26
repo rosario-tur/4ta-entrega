@@ -1,10 +1,14 @@
 footer{
     background-color: $color1;
+    width: 100%;
             a{
                 color: $color2;
                 text-decoration: none;
                 font-family: 'Oswald', sans-serif;
                 font-size: large;
+                img{
+                    border-radius: 15%;
+                }
             }
             a:hover{
                 color: white;

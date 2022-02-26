@@ -23,3 +23,10 @@
     height: 90vh;
     object-fit: cover;
 }
+
+@media (max-width: 426px) {
+    .imgCarousel{
+        height: 40vh;
+        object-fit: cover;
+    }
+}

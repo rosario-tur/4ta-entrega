@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+.row {
+  --bs-gutter-x: 0rem;
+}
+
 h1 {
   padding: 0.5rem;
 }
@@ -21,6 +25,7 @@ header {
   background-color: #ceb4d5;
   border-bottom: ridge;
   border-color: #ba8eba;
+  width: 100%;
 }
 
 header span {
@@ -52,17 +57,26 @@ header div li a:hover {
   color: #711c71;
 }
 
-.img1 {
-  position: absolute;
+main {
+  background-image: url(/assets/mainn2copia.jpg);
+  background-size: cover;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.img2 {
-  position: relative;
-  top: 100px;
+main img {
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @-webkit-keyframes aparecer {
@@ -87,26 +101,39 @@ header div li a:hover {
   background-color: #302c2c;
 }
 
+.sectionIndex h1 {
+  color: #ceb4d5;
+}
+
+.sectionIndex h2 {
+  color: #C5FADE;
+}
+
+.sectionIndex p {
+  font-size: large;
+  color: #C5FADE;
+}
+
 .botonIndex {
-  color: #434141;
+  color: #353434;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
   font-weight: bolder;
-  background-color: #7be3ca;
-  padding: 1rem;
+  background-color: #C5FADE;
+  padding: 10px;
   margin-bottom: 2rem;
   margin-left: 1rem;
-  border: #6392e9 solid 4px;
+  border: #93b1e8 solid 4px;
   border-radius: calc(20px);
 }
 
 .botonIndex:hover {
-  color: #434141;
+  color: #353434;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
   font-weight: bolder;
   background-color: #f2f798;
-  padding: 1rem;
+  padding: 10px;
   margin-bottom: 2rem;
   margin-left: 1rem;
   border: #a8de91 solid 4px;
@@ -114,10 +141,12 @@ header div li a:hover {
 }
 
 @media (max-width: 426px) {
+  main {
+    height: 30vh;
+  }
   .img2 {
-    max-width: 300px;
+    height: 15vh;
     top: 50px;
-    left: 50px;
   }
   .imagenHello {
     max-width: 200px;
@@ -129,8 +158,32 @@ header div li a:hover {
   }
 }
 
-.titulosProductos {
-  font-family: 'Permanent Marker', cursive;
+@media (max-width: 768px) {
+  main {
+    height: 30vh;
+  }
+  .img2 {
+    height: 15vh;
+    top: 50px;
+  }
+  .imagenHello {
+    max-width: 200px;
+  }
+}
+
+.grilla {
+  padding-right: var(--bs-gutter-x, 0rem);
+  padding-left: var(--bs-gutter-x, 0rem);
+}
+
+.grilla h1 {
+  font-family: "Permanent Marker";
+  color: #711c71;
+  font-weight: bolder;
+}
+
+.grilla h2 {
+  font-family: "Permanent Marker";
   color: #711c71;
 }
 
@@ -161,8 +214,19 @@ header div li a:hover {
   background-color: transparent;
 }
 
-.titulosProductos {
-  font-family: 'Permanent Marker', cursive;
+.grilla {
+  padding-right: var(--bs-gutter-x, 0rem);
+  padding-left: var(--bs-gutter-x, 0rem);
+}
+
+.grilla h1 {
+  font-family: "Permanent Marker";
+  color: #711c71;
+  font-weight: bolder;
+}
+
+.grilla h2 {
+  font-family: "Permanent Marker";
   color: #711c71;
 }
 
@@ -199,8 +263,21 @@ header div li a:hover {
      object-fit: cover;
 }
 
+@media (max-width: 426px) {
+  .imgCarousel {
+    height: 40vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+.franquiciaSection {
+  background-color: #302c2c;
+}
+
 .franquiciaSection h2 {
   font-family: 'Oswald', sans-serif;
+  font-size: 45px;
 }
 
 .franquiciaSection p {
@@ -209,11 +286,16 @@ header div li a:hover {
 
 .franquiciaSection h3 {
   font-family: 'Oswald', sans-serif;
-  color: #77d33e;
+  color: #95d233;
+  font-size: 35px;
 }
 
-.fondoFranquicia {
-  background-color: #302c2c;
+.franquiciaSection form {
+  width: 50%;
+}
+
+.imgFranquicia {
+  width: 50%;
 }
 
 .botonFormulario {
@@ -225,8 +307,24 @@ header div li a:hover {
   background-color: #8dd8af;
 }
 
+@media (max-width: 426px) {
+  .franquiciaSection h2 {
+    font-weight: 30px;
+  }
+  .franquiciaSection h3 {
+    font-weight: 20px;
+  }
+  .franquiciaSection form {
+    width: 100%;
+  }
+  .imgFranquicia {
+    width: 100%;
+  }
+}
+
 footer {
   background-color: #ceb4d5;
+  width: 100%;
 }
 
 footer a {
@@ -234,6 +332,10 @@ footer a {
   text-decoration: none;
   font-family: 'Oswald', sans-serif;
   font-size: large;
+}
+
+footer a img {
+  border-radius: 15%;
 }
 
 footer a:hover {

@@ -2,17 +2,20 @@
 // MAIN //
 
 
-.img1{
-    position: absolute;
-    
+main{
+    background-image: url(/assets/mainn2copia.jpg);
+    background-size: cover;
+    height: 90vh; 
+    display: flex;
+        img{
+            animation-name: aparecer;
+            animation-duration: 2s;
+            justify-content: center;
+            align-items: center;   
+        }
 }
 
-.img2{
-    position: relative;
-    top:100px;
-    animation-name: aparecer;
-    animation-duration: 2s;
-}
+
 
 @keyframes aparecer {
     0%{
@@ -28,6 +31,16 @@
 
 .sectionIndex{
     background-color: rgb(48, 44, 44);
+        h1{
+            color: $color1;
+        }
+        h2{
+            color: #C5FADE;
+        }
+        p{
+            font-size: large;
+            color: #C5FADE;
+        }
 }
 
 .botonIndex{
@@ -39,20 +52,34 @@
 }
 
 @media (max-width: 426px) { 
-    .img2{
-        max-width: 300px;
-        top: 50px;
-        left: 50px;
+    main{
+        height: 30vh;
     }
-
+    .img2{
+        height: 15vh;
+        top: 50px;
+    }
     .imagenHello{
         max-width: 200px;
     }
-
     .botonIndex{
         font-size: x-small;
         width: 40%;
         height: 50%;
     }
+}
 
+
+
+@media (max-width: 768px) { 
+    main{
+        height: 30vh;
+    }
+    .img2{
+        height: 15vh;
+        top: 50px;
+    }
+    .imagenHello{
+        max-width: 200px;
+    }
 }

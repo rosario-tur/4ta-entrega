@@ -1,8 +1,11 @@
 // FRANQUICIAS //
 
 .franquiciaSection{
+    background-color: rgb(48, 44, 44);
+
     h2{
         font-family: 'Oswald', sans-serif;
+        font-size: 45px;
     }
 
     p{
@@ -11,12 +14,17 @@
 
     h3{
         font-family: 'Oswald', sans-serif;
-        color: rgb(119, 211, 62);
+        color: rgb(149, 210, 51);
+        font-size: 35px;
+    }
+
+    form{
+        width: 50%;
     }
 }
 
-.fondoFranquicia{
-    background-color: rgb(48, 44, 44);
+.imgFranquicia{
+    width: 50%;
 }
 
 .botonFormulario{
@@ -26,4 +34,22 @@
 
 .botonFormulario:hover{
     background-color: $color3;
+}
+
+
+@media (max-width: 426px){
+    .franquiciaSection{
+        h2{
+            font-weight: 30px;
+        }
+        h3{
+            font-weight: 20px;
+        }
+        form{
+            width: 100%;
+        }
+    }
+    .imgFranquicia{
+        width: 100%;
+    }
 }

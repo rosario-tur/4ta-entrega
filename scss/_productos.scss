@@ -1,10 +1,18 @@
 
 // PAGINA PRODUCTOS //
 
-
-.titulosProductos{
-    font-family: 'Permanent Marker', cursive;
-    color: $color2;
+.grilla{
+        padding-right: var(--bs-gutter-x,.0rem);
+        padding-left: var(--bs-gutter-x,.0rem);
+        h1{
+            font-family: 'Permanent Marker', ;
+            color: $color2;
+            font-weight: bolder;
+        }
+        h2{
+            font-family: 'Permanent Marker', ;
+            color: $color2;
+        }
 }
 
 @media (max-width: 426px) { 
