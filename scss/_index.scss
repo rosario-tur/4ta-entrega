@@ -3,15 +3,15 @@
 
 
 main{
-    background-image: url(/assets/mainn2copia.jpg);
+    background-image: url(./assets/mainn2copia.jpg);
     background-size: cover;
     height: 90vh; 
     display: flex;
+    justify-content: center;
+    align-items: center;
         img{
             animation-name: aparecer;
             animation-duration: 2s;
-            justify-content: center;
-            align-items: center;   
         }
 }
 

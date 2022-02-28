@@ -58,12 +58,18 @@ header div li a:hover {
 }
 
 main {
-  background-image: url(/assets/mainn2copia.jpg);
+  background-image: url(./assets/mainn2copia.jpg);
   background-size: cover;
   height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main img {
@@ -71,12 +77,6 @@ main img {
           animation-name: aparecer;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 @-webkit-keyframes aparecer {
@@ -177,13 +177,13 @@ main img {
 }
 
 .grilla h1 {
-  font-family: "Permanent Marker";
+  font-family: 'Oswald', sans-serif;
   color: #711c71;
   font-weight: bolder;
 }
 
 .grilla h2 {
-  font-family: "Permanent Marker";
+  font-family: 'Oswald', sans-serif;
   color: #711c71;
 }
 
@@ -220,13 +220,13 @@ main img {
 }
 
 .grilla h1 {
-  font-family: "Permanent Marker";
+  font-family: 'Oswald', sans-serif;
   color: #711c71;
   font-weight: bolder;
 }
 
 .grilla h2 {
-  font-family: "Permanent Marker";
+  font-family: 'Oswald', sans-serif;
   color: #711c71;
 }
 
@@ -303,20 +303,24 @@ main img {
   margin: 10px 0px 10px 0px;
 }
 
+s
 .botonFormulario:hover {
   background-color: #8dd8af;
 }
 
 @media (max-width: 426px) {
-  .franquiciaSection h2 {
-    font-weight: 30px;
-  }
-  .franquiciaSection h3 {
-    font-weight: 20px;
-  }
   .franquiciaSection form {
     width: 100%;
   }
+  .imgFranquicia {
+    width: 100%;
+  }
+  .noneFranquicia {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
   .imgFranquicia {
     width: 100%;
   }

@@ -31,7 +31,7 @@
     background-color: $color1;
     margin: 10px 0px 10px 0px;
 }
-
+s
 .botonFormulario:hover{
     background-color: $color3;
 }
@@ -39,17 +39,20 @@
 
 @media (max-width: 426px){
     .franquiciaSection{
-        h2{
-            font-weight: 30px;
-        }
-        h3{
-            font-weight: 20px;
-        }
         form{
             width: 100%;
         }
     }
     .imgFranquicia{
-        width: 100%;
+        width: 100%;;
+    }
+    .noneFranquicia{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    .imgFranquicia{
+        width: 100%;;
     }
 }
