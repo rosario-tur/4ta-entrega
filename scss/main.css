@@ -57,6 +57,12 @@ header div li a:hover {
   color: #711c71;
 }
 
+.navbar-collapse {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 main {
   background-image: url(../assets/mainn2copia.jpg);
   background-size: cover;
